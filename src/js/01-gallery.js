@@ -1,5 +1,7 @@
-// Add imports above this line
 import SimpleLightbox from 'simplelightbox';
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
+// Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
@@ -24,8 +26,5 @@ const makeGalleryContainerMarkup = galleryItems.map((image) => {
 galleryContainer.insertAdjacentHTML("afterbegin", makeGalleryContainerMarkup);
 
 let gallery = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250, });
-
-console.log(galleryItems);
-
 
 console.log(galleryItems);
