@@ -16,8 +16,7 @@ const messageInput = form.message
 const storageKey = "feedback-form-state";
 
 form.addEventListener("submit", onSubmitButtonPressed);
-emailInput.addEventListener("input", throttle(saveMessageToLocalStorage, 500));
-messageInput.addEventListener("input", throttle(saveMessageToLocalStorage, 500));
+form.addEventListener("input", throttle(saveMessageToLocalStorage, 500));
 
 restoreMessageFromLocalStorage();
 
