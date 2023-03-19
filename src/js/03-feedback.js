@@ -1,8 +1,18 @@
+/*
+В 3 - коли в тебе є форма тобі не потрібно вішати на кожен 
+інпут подію, ти можешь просто повісити подію на форму.
++ в тому що ти отримуєш 1 елемент с дому і більше гнучко 
+можешь розробляти інтерфейс, наприклад в майбутньому в тебе 
+зʼявиться додатковий інпут. І тобі не потрібно буде вішати 
+обробник на нього бо він на формі.
+Перероби на подію інпут на формі."
+*/
+
 import throttle from "lodash.throttle";
 
 const form = document.querySelector(".feedback-form");
-const emailInput = form.querySelector('input[name="email"]');
-const messageInput = form.querySelector('textarea[name="message"]');
+const emailInput = form.email
+const messageInput = form.message
 const storageKey = "feedback-form-state";
 
 form.addEventListener("submit", onSubmitButtonPressed);
